@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>İletişim - Muhammed Hecazi</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f9f9f9; color: #333; }
+    header { background: #0077cc; color: white; padding: 15px 0; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .container { max-width: 600px; margin: 40px auto; background: white; padding: 20px; border-radius: 8px; }
+    form label { display: block; margin: 15px 0 5px; font-weight: bold; }
+    form input, form textarea {
+      width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem;
+      box-sizing: border-box;
+    }
+    form button {
+      margin-top: 20px; background: #0077cc; color: white; border: none; padding: 12px 20px;
+      border-radius: 4px; cursor: pointer; font-size: 1rem;
+    }
+    form button:hover { background: #005599; }
+    p.contact-info { margin-top: 30px; font-size: 1.1rem; }
+    p.contact-info a { color: #0077cc; text-decoration: none; }
+    p.contact-info a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Anasayfa</a>
+      <a href="hakkimda.html">Hakkımda</a>
+      <a href="portfoy.html">Portföy</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>İletişim</h1>
+    <p>Benimle iletişime geçmek için aşağıdaki formu kullanabilir veya doğrudan e-posta ve telefon numaramdan ulaşabilirsiniz.</p>
+
+    <form action="#" method="post" onsubmit="alert('Mesajınız iletildi!'); return false;">
+      <label for="isim">Adınız:</label>
+      <input type="text" id="isim" name="isim" required />
+
+      <label for="email">E-posta:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mesaj">Mesajınız:</label>
+      <textarea id="mesaj" name="mesaj" rows="5" required></textarea>
+
+      <button type="submit">Gönder</button>
+    </form>
+
+    <p class="contact-info">
+      E-posta: <a href="mailto:ornek@mail.com">muhmmetyusuf50@mail.com</a><br />
+      Telefon: +90 5527240320
+    </p>
+  </div>
+</body>
+</html>
